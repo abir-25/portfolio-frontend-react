@@ -73,17 +73,22 @@
   .tag-cmp {
     flex-direction: column;
     margin-top: 3rem;
+    padding: 1rem;
 
     p {
       width: 100%;
       text-transform: uppercase;
       text-align: right;
+      font-size: 0.9rem;
     }
   }
 
   span {
     font-size: 2.5rem;
-
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
     @media screen and (min-width: 2000px) {
       font-size: 5rem;
     }
@@ -92,6 +97,33 @@
   @media screen and (max-width: 1200px) {
     justify-content: flex-start;
     align-items: flex-start;
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
   }
 }
 
@@ -127,13 +159,13 @@
 
   div:nth-child(2) {
     margin: 1.75rem;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
   }
 
   div:nth-child(3) {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
 
   @media screen and (min-width: 2000px) {
