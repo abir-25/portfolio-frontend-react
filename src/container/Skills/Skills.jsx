@@ -12,7 +12,7 @@ const Skills = () => {
 
   useEffect(() => {
     const query = '*[_type == "experiences"]';
-    const skillsQuery = '*[_type == "skills"]';
+    const skillsQuery = '*[_type == "skills"] | order(priority asc)';
 
     client.fetch(query).then((data) => {
       setExperiences(data);
@@ -42,7 +42,7 @@ const Skills = () => {
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
-              <p className="p-text">{skill.name}</p>
+              <p className="subtitle-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -50,7 +50,7 @@ const Skills = () => {
           {experiences.map((experience) => (
             <motion.div className="app__skills-exp-item" key={experience.year}>
               <div className="app__skills-exp-year">
-                <p className="bold-text">{experience.year}</p>
+                <p className="title-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
@@ -63,8 +63,15 @@ const Skills = () => {
                       data-for={work.name}
                       key={work.name}
                     >
-                      <h4 className="bold-text">{work.name}</h4>
-                      <p className="p-text">{work.company}</p>
+                      <h4 className="title-text">{work.name}</h4>
+                      <p className="subtitle-text">{work.company}</p>
+                      {work.desc && (
+                        <ul className="desc-container">
+                          {work.desc.map((desc) => (
+                            <li className="p-text">{desc.responsibilities}</li>
+                          ))}
+                        </ul>
+                      )}
                     </motion.div>
                     <ReactTooltip
                       id={work.name}
