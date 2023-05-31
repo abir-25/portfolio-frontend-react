@@ -42,7 +42,7 @@ const Skills = () => {
               >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
               </div>
-              <p className="subtitle-text">{skill.name}</p>
+              <p className="mini-title-text">{skill.name}</p>
             </motion.div>
           ))}
         </motion.div>
