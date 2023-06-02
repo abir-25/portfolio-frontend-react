@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from "react";
 // import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Work.scss";
 
 const Work = () => {
+  const navigate = useNavigate();
+
   const [works, setWorks] = useState([]);
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState("All");
@@ -20,8 +23,6 @@ const Work = () => {
       setFilterWork(data);
     });
   }, []);
-
-  console.log(works);
 
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
@@ -38,6 +39,9 @@ const Work = () => {
     }, 200);
   };
 
+  const handleWork = (id) => {
+    navigate("/work/" + id);
+  };
   return (
     <>
       <h2 className="head-text">
@@ -72,7 +76,13 @@ const Work = () => {
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
+          <div
+            className="app__work-item app__flex"
+            key={index}
+            onClick={() => {
+              handleWork(work._id);
+            }}
+          >
             <div className="app__work-img app__flex">
               <img src={urlFor(work.imgUrl)} alt={work.name} />
 
