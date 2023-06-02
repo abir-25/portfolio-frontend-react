@@ -1,0 +1,129 @@
+.app__work-description-container {
+  width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 100px 30px;
+
+  @media screen and (max-width: 1024px) {
+    width: 1000px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.work-title-text {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: left;
+  width: 70%;
+  @media screen and (min-width: 2000px) {
+    font-size: 3rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+}
+
+.tags-container {
+  margin: 40px 0px;
+
+  span {
+    background: rgba(196, 196, 196, 0.2);
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 20px;
+    font-weight: normal;
+    border-radius: 5px;
+  }
+}
+
+.work-summary-container {
+  display: flex;
+  margin-top: 30px;
+
+  .recent-work-summary-item {
+    flex-basis: 165px;
+    padding: 0 20px;
+    position: relative;
+
+    p {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+    }
+  }
+  :nth-child(1) {
+    padding-left: 0px;
+  }
+}
+
+.work-image-container {
+  position: relative;
+  padding-bottom: 100px;
+
+  .image-container {
+    position: relative;
+    max-width: 1170px;
+
+    .portfolio_preview_image {
+      width: 100%;
+      height: 780px;
+      top: 20px;
+      left: 0px;
+      overflow: hidden;
+      position: relative;
+      z-index: 10;
+      background-position: top left;
+      box-shadow: 0px -44px 70px rgb(0 0 0 / 10%);
+      transition: all 0.5s;
+
+      &:before {
+        position: absolute;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(
+          180deg,
+          rgba(248, 248, 248, 0) 0%,
+          #f8f8f8 40%
+        );
+        z-index: 999;
+        content: "";
+        bottom: -100px;
+        height: 310px;
+      }
+
+      .view_full_page {
+        position: absolute;
+        width: 250px;
+        background: #673ab7;
+        border-radius: 20px;
+        left: 50%;
+        bottom: 65px;
+        margin-left: -125px;
+        z-index: 999;
+        text-align: center;
+        color: #fff;
+        padding: 10px 30px;
+      }
+
+      .portfolio-item-image {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+}
