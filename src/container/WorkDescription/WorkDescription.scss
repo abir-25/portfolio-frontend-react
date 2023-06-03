@@ -76,7 +76,7 @@
 
   .image-container {
     position: relative;
-    max-width: 1170px;
+    // max-width: 1170px;
 
     .portfolio_preview_image {
       width: 100%;
@@ -109,7 +109,7 @@
       .view_full_page {
         position: absolute;
         width: 250px;
-        background: #673ab7;
+        background: var(--secondary-color);
         border-radius: 20px;
         left: 50%;
         bottom: 65px;
@@ -118,12 +118,79 @@
         text-align: center;
         color: #fff;
         padding: 10px 30px;
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+        }
       }
 
       .portfolio-item-image {
         position: relative;
         width: 100%;
       }
+    }
+  }
+}
+
+.quote-container {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .quote-content-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 90px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      line-height: 50px;
+      font-weight: 700;
+    }
+
+    p {
+      width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+
+    a {
+      height: 60px;
+      font-size: 18px;
+      font-weight: 400;
+      padding-top: 17px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-top: 30px;
+      background: #f9896b;
+    }
+
+    .btn-request {
+      display: inline-block;
+      margin-top: 20px;
+      margin-right: 12px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      box-shadow: inset 0 0 0 0 transparent;
+      -webkit-transition: box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+      transition: box-shadow 0.3s ease-out, border-color 0.3s ease-out;
+      color: #fff;
+      text-decoration: none;
     }
   }
 }
