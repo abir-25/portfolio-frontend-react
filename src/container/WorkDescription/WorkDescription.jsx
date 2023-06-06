@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./WorkDescription.scss";
 import { Navbar } from "../../components";
 import quote from "../../assets/quote.png";
@@ -12,6 +12,7 @@ const WorkDescription = () => {
   const [location, setLocation] = useState();
   const [imageSrc, setImageSrc] = useState();
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const query = `*[ _type == "works" && _id == "${id}" ]`;
@@ -78,12 +79,14 @@ const WorkDescription = () => {
                 checking the details, I will send you email to schedule a call
                 or chat.
               </p>
-              <a
-                href="https://www.arshakir.com/request-quote"
+              <span
+                onClick={() => {
+                  navigate("/contact");
+                }}
                 className="btn-request"
               >
                 Request a Quote
-              </a>
+              </span>
             </div>
           </div>
         </div>

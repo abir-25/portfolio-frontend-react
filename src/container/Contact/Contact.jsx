@@ -1,6 +1,17 @@
 import React from "react";
 import "./Contact.scss";
 import { Navbar } from "../../components";
+import linkedIn from "../../assets/linkedin.png";
+import twitter from "../../assets/twitter.png";
+import email from "../../assets/email.png";
+import mobile from "../../assets/mobile.png";
+import dribble from "../../assets/dribble.png";
+import instagram from "../../assets/instagram.png";
+import behance from "../../assets/behance.png";
+import youtube from "../../assets/youtube.png";
+import showwcase from "../../assets/showwcase.png";
+import github from "../../assets/github.png";
+import facebook from "../../assets/facebook.png";
 
 const Contact = () => {
   return (
@@ -11,138 +22,156 @@ const Contact = () => {
           <div className="visible-desktop hidden-mobile">
             <div className="contact-options">
               <a
-                href="mailto:hello@arshakir.com"
+                href="mailto:mahmud.abir025@gmail.com"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-email.svg"
-                      alt=""
-                    />
+                    <img src={email} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>hello@arshakir.com</p>
+                    <p>mahmud.abir025@gmail.com</p>
                   </div>
                 </div>
               </a>
               <a
-                href="tel:+1 (909)  978 7623"
+                href="tel:+880 1828-448101"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-phone.svg"
-                      alt=""
-                    />
+                    <img src={mobile} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>+1 (909) 978 7623</p>
+                    <p>+880 1828-448101</p>
                   </div>
                 </div>
               </a>
               <a
-                href="https://t.me/arshakir"
+                href="https://www.showwcase.com/mahmudabir025977"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-telegram.svg"
-                      alt=""
-                    />
+                    <img src={showwcase} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>@arshakir</p>
+                    <p>showwcase/mahmud.abir</p>
                   </div>
                 </div>
               </a>
               <a
-                href="https://join.skype.com/invite/l6FxrNMwMIl5"
+                href="https://github.com/abir-25"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-skype.svg"
-                      alt=""
-                    />
+                    <img src={github} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>shahsawar260</p>
+                    <p>github/abir-25</p>
                   </div>
                 </div>
               </a>
               <a
-                href="https://dribbble.com/arshakir"
+                href="https://www.facebook.com/AbirMahmud101/"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-dribbble.svg"
-                      alt=""
-                    />
+                    <img src={facebook} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>dribbble.com/arshakir</p>
+                    <p>facebook/abirmahmud101</p>
                   </div>
                 </div>
               </a>
               <a
-                href="https://instagram.com/arshakirpk"
+                href="https://www.linkedin.com/in/abirmahmud25/"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-instagram.svg"
-                      alt=""
-                    />
+                    <img src={linkedIn} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>instagram.com/arshakirpk</p>
+                    <p>linked/abirmahmud25</p>
                   </div>
                 </div>
               </a>
               <a
-                href="https://behance.net/arshakir"
+                href="https://twitter.com/TheAbirMahmud"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-behance.svg"
-                      alt=""
-                    />
+                    <img src={twitter} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>behance.net/arshakir</p>
+                    <p>@TheAbirMahmud</p>
                   </div>
                 </div>
               </a>
               <a
-                href="https://youtube.com/MrShakir260"
+                href="https://dribbble.com/abir-25"
                 target="_blank"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
                   <div className="contact-option-icon">
-                    <img
-                      src="https://www.arshakir.com/images/icon-youtube.svg"
-                      alt=""
-                    />
+                    <img src={dribble} alt="" />
                   </div>
                   <div className="contact-option-details">
-                    <p>youtube.com/MrShakir260</p>
+                    <p>dribbble.com/abir-25</p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.instagram.com/_abir_mahmud_/"
+                target="_blank"
+                className="contact-option"
+              >
+                <div className="contact-option-wrap">
+                  <div className="contact-option-icon">
+                    <img src={instagram} alt="" />
+                  </div>
+                  <div className="contact-option-details">
+                    <p>instagram.com/_abir_mahmud_</p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.behance.net/onlineschool1"
+                target="_blank"
+                className="contact-option"
+              >
+                <div className="contact-option-wrap">
+                  <div className="contact-option-icon">
+                    <img src={behance} alt="" />
+                  </div>
+                  <div className="contact-option-details">
+                    <p>behance.net/onlineschool1</p>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://www.youtube.com/c/OnlineSchoolAbir"
+                target="_blank"
+                className="contact-option"
+              >
+                <div className="contact-option-wrap">
+                  <div className="contact-option-icon">
+                    <img src={youtube} alt="" />
+                  </div>
+                  <div className="contact-option-details">
+                    <p>youtube.com/OnlineSchoolAbir</p>
                   </div>
                 </div>
               </a>
@@ -295,138 +324,156 @@ const Contact = () => {
                     Quickly Connect with AR Shakir
                   </h3>
                   <a
-                    href="mailto:hello@arshakir.com"
+                    href="mailto:mahmud.abir025@gmail.com"
                     target="_blank"
                     class="contact-option"
                   >
                     <div class="contact-option-wrap">
                       <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-email.svg"
-                          alt=""
-                        />
+                        <img src={email} alt="" />
                       </div>
                       <div class="contact-option-details">
-                        <p>hello@arshakir.com</p>
+                        <p>mahmud.abir025@gmail.com</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="tel:+1 (909)  978 7623"
+                    href="tel:+880 1828-448101"
                     target="_blank"
                     class="contact-option"
                   >
                     <div class="contact-option-wrap">
                       <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-phone.svg"
-                          alt=""
-                        />
+                        <img src={mobile} alt="" />
                       </div>
                       <div class="contact-option-details">
-                        <p>+1 (909) 978 7623</p>
+                        <p>+880 1828-448101</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="https://t.me/arshakir"
+                    href="https://www.showwcase.com/mahmudabir025977"
                     target="_blank"
-                    class="contact-option"
+                    className="contact-option"
                   >
-                    <div class="contact-option-wrap">
-                      <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-telegram.svg"
-                          alt=""
-                        />
+                    <div className="contact-option-wrap">
+                      <div className="contact-option-icon">
+                        <img src={showwcase} alt="" />
                       </div>
-                      <div class="contact-option-details">
-                        <p>@arshakir</p>
+                      <div className="contact-option-details">
+                        <p>showwcase/mahmud.abir</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="https://join.skype.com/invite/l6FxrNMwMIl5"
+                    href="https://github.com/abir-25"
                     target="_blank"
-                    class="contact-option"
+                    className="contact-option"
                   >
-                    <div class="contact-option-wrap">
-                      <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-skype.svg"
-                          alt=""
-                        />
+                    <div className="contact-option-wrap">
+                      <div className="contact-option-icon">
+                        <img src={github} alt="" />
                       </div>
-                      <div class="contact-option-details">
-                        <p>shahsawar260</p>
+                      <div className="contact-option-details">
+                        <p>github/abir-25</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="https://dribbble.com/arshakir"
+                    href="https://www.facebook.com/AbirMahmud101/"
                     target="_blank"
-                    class="contact-option"
+                    className="contact-option"
                   >
-                    <div class="contact-option-wrap">
-                      <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-dribbble.svg"
-                          alt=""
-                        />
+                    <div className="contact-option-wrap">
+                      <div className="contact-option-icon">
+                        <img src={facebook} alt="" />
                       </div>
-                      <div class="contact-option-details">
-                        <p>dribbble.com/arshakir</p>
+                      <div className="contact-option-details">
+                        <p>facebook/abirmahmud101</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="https://instagram.com/arshakirpk"
+                    href="https://www.linkedin.com/in/abirmahmud25/"
                     target="_blank"
                     class="contact-option"
                   >
                     <div class="contact-option-wrap">
                       <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-instagram.svg"
-                          alt=""
-                        />
+                        <img src={linkedIn} alt="" />
                       </div>
                       <div class="contact-option-details">
-                        <p>instagram.com/arshakirpk</p>
+                        <p>linked/abirmahmud25</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="https://behance.net/arshakir"
+                    href="https://twitter.com/TheAbirMahmud"
                     target="_blank"
                     class="contact-option"
                   >
                     <div class="contact-option-wrap">
                       <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-behance.svg"
-                          alt=""
-                        />
+                        <img src={twitter} alt="" />
                       </div>
                       <div class="contact-option-details">
-                        <p>behance.net/arshakir</p>
+                        <p>@TheAbirMahmud</p>
                       </div>
                     </div>
                   </a>
                   <a
-                    href="https://youtube.com/MrShakir260"
+                    href="https://dribbble.com/abir-25"
                     target="_blank"
                     class="contact-option"
                   >
                     <div class="contact-option-wrap">
                       <div class="contact-option-icon">
-                        <img
-                          src="https://www.arshakir.com/images/icon-youtube.svg"
-                          alt=""
-                        />
+                        <img src={dribble} alt="" />
                       </div>
                       <div class="contact-option-details">
-                        <p>youtube.com/MrShakir260</p>
+                        <p>dribbble.com/abir-25</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/_abir_mahmud_/"
+                    target="_blank"
+                    class="contact-option"
+                  >
+                    <div class="contact-option-wrap">
+                      <div class="contact-option-icon">
+                        <img src={instagram} alt="" />
+                      </div>
+                      <div class="contact-option-details">
+                        <p>instagram.com/_abir_mahmud_</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.behance.net/onlineschool1"
+                    target="_blank"
+                    class="contact-option"
+                  >
+                    <div class="contact-option-wrap">
+                      <div class="contact-option-icon">
+                        <img src={behance} alt="" />
+                      </div>
+                      <div class="contact-option-details">
+                        <p>behance.net/onlineschool1</p>
+                      </div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.youtube.com/c/OnlineSchoolAbir"
+                    target="_blank"
+                    class="contact-option"
+                  >
+                    <div class="contact-option-wrap">
+                      <div class="contact-option-icon">
+                        <img src={youtube} alt="" />
+                      </div>
+                      <div class="contact-option-details">
+                        <p>youtube.com/OnlineSchoolAbir</p>
                       </div>
                     </div>
                   </a>
