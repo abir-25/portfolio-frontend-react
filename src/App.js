@@ -3,6 +3,8 @@ import Home from "./container/Home";
 import { Routes, Route } from "react-router-dom";
 import WorkDescription from "./container/WorkDescription/WorkDescription";
 import Contact from "./container/Contact/Contact";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
         <Route path="/work/:id" element={<WorkDescription />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
