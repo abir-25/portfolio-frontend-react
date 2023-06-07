@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Contact.scss";
 import { Navbar } from "../../components";
 import linkedIn from "../../assets/linkedin.png";
@@ -14,6 +14,21 @@ import github from "../../assets/github.png";
 import facebook from "../../assets/facebook.png";
 
 const Contact = () => {
+  const [location, setLocation] = useState();
+  const [whatsApp, setWhatsApp] = useState(false);
+
+  useEffect(() => {
+    setLocation(JSON.parse(localStorage.getItem("geo-location")));
+  }, []);
+
+  const handleConnectOptions = (e) => {
+    if (e.target.value === "whatsapp") {
+      setWhatsApp(true);
+    } else {
+      setWhatsApp(false);
+    }
+  };
+
   return (
     <>
       <Navbar />
@@ -208,7 +223,6 @@ const Contact = () => {
                       class="new-form-control"
                       id="name"
                       name="name"
-                      fdprocessedid="eqgaq"
                     />
                   </div>
                   <div class="input-controls">
@@ -221,7 +235,6 @@ const Contact = () => {
                       class="new-form-control"
                       id="email"
                       name="email"
-                      fdprocessedid="t04dff"
                     />
                   </div>
                 </div>
@@ -231,24 +244,28 @@ const Contact = () => {
                     <input
                       type="text"
                       class="new-form-control"
-                      placeholder="e.g Shopify Design or Webflow or Dashboard Design"
+                      placeholder="e.g Website Frontend or Website Backend or REST API"
                       id="services"
                       name="services"
-                      fdprocessedid="mmhve"
                     />
                   </div>
                   <div class="input-controls">
                     <label for="email">
-                      Budget Range (in USD) <span class="required">*</span>
+                      Budget Range (in
+                      {location?.country_code === "BD" ? "BDT" : "USD"})
+                      <span class="required">*</span>
                     </label>
                     <input
                       type="text"
                       required=""
                       class="new-form-control"
-                      placeholder="e.g 10k-12k USD"
+                      placeholder={`e.g ${
+                        location?.country_code === "BD"
+                          ? "30k-40k BDT"
+                          : "4k-5k USD"
+                      }`}
                       id="budget"
                       name="budget"
-                      fdprocessedid="ekywd"
                     />
                   </div>
                 </div>
@@ -272,12 +289,12 @@ const Contact = () => {
                     required=""
                     id="connectoptions"
                     name="connectoptions"
-                    fdprocessedid="rhy8ng"
+                    onChange={handleConnectOptions}
                   >
                     <option>Choose an option to connect</option>
                     <option value="zoom">I want to schedule a zoom call</option>
-                    <option value="telegram">
-                      I want to connect via Telegram
+                    <option value="meet">
+                      I want to schedule a Meeting on Google Meet
                     </option>
                     <option value="whatsapp">
                       I want to connect via WhatsApp
@@ -287,26 +304,19 @@ const Contact = () => {
                     </option>
                   </select>
                 </div>
-                <div class="input-controls">
-                  <label for="telegram">Please share your Telegram</label>
-                  <input
-                    type="text"
-                    class="new-form-control"
-                    placeholder="Your Telegram Handle"
-                    id="telegram"
-                    name="telegram"
-                  />
-                </div>
-                <div class="input-controls">
-                  <label for="whatsapp">Please share your WhatsApp</label>
-                  <input
-                    type="text"
-                    class="new-form-control"
-                    placeholder="Your whatsapp number with country code"
-                    id="whatsapp"
-                    name="whatsapp"
-                  />
-                </div>
+                {whatsApp && (
+                  <div class="input-controls">
+                    <label for="whatsapp">Please share your WhatsApp</label>
+                    <input
+                      type="text"
+                      class="new-form-control"
+                      placeholder="Your whatsapp number with country code"
+                      id="whatsapp"
+                      name="whatsapp"
+                    />
+                  </div>
+                )}
+
                 <div style={{ display: "none" }}>
                   <input type="submit" />
                 </div>
