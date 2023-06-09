@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { AppWrap, MotionWrap } from "../../wrapper";
+// import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import { useNavigate, useParams } from "react-router-dom";
 import "./WorkDescription.scss";
@@ -21,7 +21,7 @@ const WorkDescription = () => {
       setWork(data);
       setImageSrc(urlFor(data[0]?.imgUrl && data[0]?.imgUrl).url());
     });
-  }, []);
+  }, [id]);
   // console.log(imageSrc);
 
   useEffect(() => {
@@ -56,7 +56,11 @@ const WorkDescription = () => {
             <div className="image-container">
               <div className="portfolio_preview_image ">
                 <div className="view_full_page">
-                  <a href={work[0]?.projectLink} target="_blank">
+                  <a
+                    href={work[0]?.projectLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <p>Click To View Website</p>
                   </a>
                 </div>

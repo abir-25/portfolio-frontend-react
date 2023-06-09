@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
 import { images } from "../../constants";
-import "./Navbar.scss";
-import { HashLink } from "react-router-hash-link";
+import "./NavbarSPA.scss";
 
-const Navbar = () => {
+const NavbarSPA = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
 
@@ -15,7 +14,6 @@ const Navbar = () => {
     navigate("/");
     window.scrollTo(0, 0);
   };
-
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
@@ -25,7 +23,7 @@ const Navbar = () => {
         {["home", "about", "work", "skills", "contact"].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <HashLink to={`/#${item}`}>{item}</HashLink>
+            <a href={`#${item}`}>{item}</a>
           </li>
         ))}
       </ul>
@@ -42,7 +40,9 @@ const Navbar = () => {
             <ul>
               {["home", "about", "work", "skills", "contact"].map((item) => (
                 <li key={item}>
-                  <HashLink to={`/#${item}`}>{item}</HashLink>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -53,4 +53,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarSPA;

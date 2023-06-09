@@ -3,7 +3,7 @@ import Home from "./container/Home";
 import { Routes, Route } from "react-router-dom";
 import WorkDescription from "./container/WorkDescription/WorkDescription";
 import Contact from "./container/Contact/Contact";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function App() {

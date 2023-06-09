@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Navbar } from "../components";
 import { About, Footer, Header, Skills, Testimonial, Work } from "../container";
+import NavbarSPA from "../components/NavbarSPA/NavbarSPA";
 
 const Home = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
+      <NavbarSPA />
       <Header />
       <About />
       <Work />

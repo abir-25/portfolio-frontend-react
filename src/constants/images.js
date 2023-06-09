@@ -34,6 +34,7 @@ import bolt from "../assets/bolt.png";
 import nb from "../assets/nb.png";
 import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
+import laravel from "../assets/laravel.png";
 
 const imageFile = {
   email,
@@ -69,6 +70,7 @@ const imageFile = {
   nb,
   skype,
   spotify,
+  laravel,
 };
 
 export default imageFile;

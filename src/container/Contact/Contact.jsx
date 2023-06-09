@@ -67,6 +67,7 @@ const Contact = () => {
               <a
                 href="mailto:mahmud.abir025@gmail.com"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -81,6 +82,7 @@ const Contact = () => {
               <a
                 href="tel:+880 1828-448101"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -95,6 +97,7 @@ const Contact = () => {
               <a
                 href="https://www.showwcase.com/mahmudabir025977"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -109,6 +112,7 @@ const Contact = () => {
               <a
                 href="https://github.com/abir-25"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -123,6 +127,7 @@ const Contact = () => {
               <a
                 href="https://www.facebook.com/AbirMahmud101/"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -137,6 +142,7 @@ const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/abirmahmud25/"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -151,6 +157,7 @@ const Contact = () => {
               <a
                 href="https://twitter.com/TheAbirMahmud"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -165,6 +172,7 @@ const Contact = () => {
               <a
                 href="https://dribbble.com/abir-25"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -179,6 +187,7 @@ const Contact = () => {
               <a
                 href="https://www.instagram.com/_abir_mahmud_/"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -193,6 +202,7 @@ const Contact = () => {
               <a
                 href="https://www.behance.net/onlineschool1"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -207,6 +217,7 @@ const Contact = () => {
               <a
                 href="https://www.youtube.com/c/OnlineSchoolAbir"
                 target="_blank"
+                rel="noreferrer"
                 className="contact-option"
               >
                 <div className="contact-option-wrap">
@@ -353,6 +364,7 @@ const Contact = () => {
                   <a
                     href="mailto:mahmud.abir025@gmail.com"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -367,6 +379,7 @@ const Contact = () => {
                   <a
                     href="tel:+880 1828-448101"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -381,6 +394,7 @@ const Contact = () => {
                   <a
                     href="https://www.showwcase.com/mahmudabir025977"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -395,6 +409,7 @@ const Contact = () => {
                   <a
                     href="https://github.com/abir-25"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -409,6 +424,7 @@ const Contact = () => {
                   <a
                     href="https://www.facebook.com/AbirMahmud101/"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -423,6 +439,7 @@ const Contact = () => {
                   <a
                     href="https://www.linkedin.com/in/abirmahmud25/"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -437,6 +454,7 @@ const Contact = () => {
                   <a
                     href="https://twitter.com/TheAbirMahmud"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -451,6 +469,7 @@ const Contact = () => {
                   <a
                     href="https://dribbble.com/abir-25"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -465,6 +484,7 @@ const Contact = () => {
                   <a
                     href="https://www.instagram.com/_abir_mahmud_/"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -479,6 +499,7 @@ const Contact = () => {
                   <a
                     href="https://www.behance.net/onlineschool1"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
@@ -493,6 +514,7 @@ const Contact = () => {
                   <a
                     href="https://www.youtube.com/c/OnlineSchoolAbir"
                     target="_blank"
+                    rel="noreferrer"
                     className="contact-option"
                   >
                     <div className="contact-option-wrap">
