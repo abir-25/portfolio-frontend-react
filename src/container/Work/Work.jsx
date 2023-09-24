@@ -50,6 +50,7 @@ const Work = () => {
 
       <div className="app__work-filter">
         {[
+          "Laravel",
           "React",
           "Vue",
           "JavaScript",
