@@ -51,7 +51,9 @@ const Work = () => {
       <div className="app__work-filter">
         {[
           "React",
-          "Javascript",
+          "Vue",
+          "JavaScript",
+          "TypeScript",
           "Mobile App",
           "HTML/CSS",
           "Game",
