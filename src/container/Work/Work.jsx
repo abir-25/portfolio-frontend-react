@@ -54,10 +54,10 @@ const Work = () => {
           "Vue",
           "JavaScript",
           "TypeScript",
-          "Mobile App",
+          "Material UI",
           "HTML/CSS",
+          "Mobile App",
           "Game",
-          "UI/UX",
           "All",
         ].map((item, index) => (
           <div
